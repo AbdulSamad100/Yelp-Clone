@@ -107,7 +107,7 @@ body {
     position: absolute;
     transition: .5s;
     top: var(--topm2);
-    left: calc(var(--leftm2) + 270px);
+    left: calc(var(--leftm2) + 300px);
     height: 100px;
 }
 
@@ -282,7 +282,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: white;
-    padding-top: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .card:hover {
@@ -293,7 +294,7 @@ body {
 .card {
     transition: 1s;
     width: 300px;
-    margin: 10px;
+    margin: 30px;
 }
 
 .card-container {
@@ -302,8 +303,45 @@ body {
     justify-content: space-around;
     background-color: white;
 }
+#minicard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+    column-gap: 20px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.minicard-in {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.minicard-in img {
+    display: block;
+    display: block;
+    margin-bottom: 2px;
+    width: 40px;
+}
+
+.minicard-in p {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
 
 .index-footer {
+    font-size: 12px;
     background-color: rgb(242, 242, 242, .8);
     padding: 40px;
     text-align: start;
@@ -316,7 +354,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-footer>.protected{
+
+footer>.protected {
     display: flex;
 }
 
@@ -344,6 +383,11 @@ footer>.protected{
     text-decoration: none;
 }
 
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     .card {
         width: calc(50% - 20px);
@@ -354,7 +398,6 @@ footer>.protected{
     .card {
         transition: 1s;
         width: 100%;
-        /* One card per row */
     }
 }
 
