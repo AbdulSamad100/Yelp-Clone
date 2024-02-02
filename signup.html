@@ -6,32 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="signup.css">
     <title>Sign Up - Yelp</title>
 </head>
 
 <body>
+    <img src="images/loginhero.png" alt="" id="loginh">
     <a href="index.html"><img src="images/Yelp_Logo_color.png" alt="" id="logo"></a>
-    <br><br><br><br><hr><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <hr><br><br><br><br><br><br><br>
     <div id="mainform">
         <h4>Sign Up for Yelp</h4>
         <h6>Connect with great local businesses</a></h6>
-        <p>By continuing, you agree to Yelp’s <a href="">Terms of Service </a>and acknowledge Yelp’s <a href="">Privacy Policy.</a></p>
-        <button type="button" class="btn btn-light" id="google"><img src="images/googlelogo.png" alt="">Continue With Google</button>
-        <br><button type="button" class="btn btn-dark" id="apple"><img src="images/applelogo.png" alt=""> Continue With Google</button>
+        <p>By continuing, you agree to Yelp’s <a href="">Terms of Service </a>and acknowledge Yelp’s <a href="">Privacy
+                Policy.</a></p>
+        <button type="button" class="btn btn-light" id="google"><img src="images/googlelogo.png" alt="">Continue With
+            Google</button>
+        <br><button type="button" class="btn btn-dark" id="apple"><img src="images/applelogo.png" alt=""> Continue With
+            Google</button>
         <p id="dworry">Don't worry, we never post without your permission.</p>
-        <hr class="horizontal-line"><div ><p id="or">OR</p></div>
-        <div><input type="text" class="form-control" placeholder="First name">
+        <hr class="horizontal-line">
+        <div>
+            <p id="or">OR</p>
+        </div>
+        <div class="names">
+            <input type="text" class="form-control" placeholder="First name" id="spaces">
             <input type="text" class="form-control" placeholder="Last name">
-        </div>    
-        <input type="text" class="form-control" placeholder="Email"><br>
+        </div>
+        <input type="text" class="form-control" placeholder="Email">
         <input type="password" class="form-control" placeholder="password" id="passfield">
-        <div class="ending"><a href=""><p>Forgot password?</p></a></div>
+        <input type="text" class="form-control" placeholder="ZIP Code">
+        <h6>Birthday </h6>&nbsp;<p>Optional</p>
+        <div class="names">
+            <select id="month" name="month" class="form-select">
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="02">March</option>
+                <option value="02">April</option>
+                <option value="02">May</option>
+                <option value="02">June</option>
+                <option value="02">July</option>
+                <option value="02">August</option>
+                <option value="02">September</option>
+                <option value="02">October</option>
+                <option value="02">November</option>
+                <option value="02">December</option>
+            </select>
+            <select id="month" name="Day" aria-placeholder="Day" class="form-select">
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="02">3</option>
+                <option value="02">4</option>
+                <option value="02">5</option>
+                <option value="02">6</option>
+                <option value="02">7</option>
+                <option value="02">8</option>
+                <option value="02">9</option>
+                <option value="02">10</option>
+                <option value="02">11</option>
+                <option value="02">12</option>
+                <option value="02">13</option>
+                <option value="02">14</option>
+                <option value="02">15</option>
+                <option value="02">16</option>
+                <option value="02">17</option>
+                <option value="02">18</option>
+                <option value="02">19</option>
+                <option value="02">20</option>
+                <option value="02">21</option>
+                <option value="02">22</option>
+                <option value="02">23</option>
+                <option value="02">24</option>
+                <option value="02">25</option>
+                <option value="02">26</option>
+                <option value="02">27</option>
+                <option value="02">28</option>
+                <option value="02">29</option>
+                <option value="02">30</option>
+                <option value="02">31</option>
+            </select>
+            <select id="year" name="year" class="form-select">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+        <div class="ending"><a href="">
+                <p>Forgot password?</p>
+            </a></div>
         <button type="button" class="btn btn-dark" id="loginbtn">Login</button>
-        <div class="ending"><p>New to Yelp? <a href="">Sign up</a></p></div>
+        <div class="ending">
+            <p>New to Yelp? <a href="">Sign up</a></p>
+        </div>
     </div>
-    <img src="images/loginhero.png" alt="" id="loginh">
+    <br><br><br>
     <footer class="index-footer">
         <div class="footer-container">
             <div class="footer-section about">
@@ -84,11 +184,11 @@
                 <p> This site is protected by hCaptcha - See additional Privacy Policy and Terms</p>
             </a>
         </div>
-        
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
