@@ -89,7 +89,7 @@ body {
 }
 
 #loginh {
-    position: fixed;
+    position: absolute;
     right: 280px;
     top: 280px;
     width: 430px;
@@ -148,7 +148,35 @@ footer>.protected {
 
 @media (max-width: 1070px) {
     #mainform {
+        transition: .5s;
         width: 250px;
+    }
+}
+
+@media (max-width: 1284px) {
+    #loginh {
+        transition: .5s;
+        width: 300px;
+        right: 70px;
+    }
+}
+
+@media (max-width: 860px) {
+    #mainform {
+        top: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+    }
+
+    #loginh {
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer {
+        top: 500px;
     }
 }
 
