@@ -13,9 +13,10 @@
 
 <body>
     <img src="../images/loginhero.png" alt="" id="loginh">
-    <a href="index.html"><img src="../images/Yelp_Logo_color.png" alt="" id="logo"></a>
+    <a href="../index.html"><img src="../images/Yelp_Logo_color.png" alt="" id="logo"></a>
     <br><br><br><br>
     <hr><br><br><br><br><br><br><br>
+    <form action="" method="post">
     <div id="mainform">
         <h4>Sign Up for Yelp</h4>
         <h6>Connect with great local businesses</a></h6>
@@ -31,12 +32,12 @@
             <p id="or">OR</p>
         </div>
         <div class="names">
-            <input type="text" class="form-control" placeholder="First name" id="spaces">
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" required class="form-control" placeholder="First name" id="spaces">
+            <input type="text" required class="form-control" placeholder="Last name">
         </div>
-        <input type="text" class="form-control" placeholder="Email">
-        <input type="password" class="form-control" placeholder="password" id="passfield">
-        <input type="text" class="form-control" placeholder="ZIP Code">
+        <input type="text" required class="form-control" placeholder="Email">
+        <input type="password" required class="form-control" placeholder="password" id="passfield">
+        <input type="text" required class="form-control" placeholder="ZIP Code">
         <h6>Birthday </h6>&nbsp;<p>Optional</p>
         <div class="names">
             <select id="month" name="month" class="form-select">
@@ -123,11 +124,12 @@
                 <option value="2023">2023</option>
             </select>
         </div>
-        <button type="button" class="btn btn-dark" id="loginbtn">Login</button>
+        <button type="submit" class="btn btn-dark" id="loginbtn">Login</button>
         <div class="ending">
             <p>Already on Yelp? <a href="login.html">Log In</a></p>
         </div>
     </div>
+</form>
     <br><br><br>
     <footer class="index-footer">
         <div class="footer-container">
