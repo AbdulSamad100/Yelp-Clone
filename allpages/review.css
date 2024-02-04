@@ -221,3 +221,17 @@ footer>.protected {
         top: 100px;
     }
 }
+
+@media (max-width: 500px){
+    #search{
+        width: 350px;
+        margin-top: 20px;
+        
+        margin-bottom: 20px;
+    }
+    #rt{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}

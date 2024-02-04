@@ -103,6 +103,7 @@ body {
     top: var(--topm2);
     left: calc(var(--leftm2) + 135px);
     height: 100px;
+    z-index: 5;
 }
 
 #dd4 {
@@ -402,21 +403,12 @@ footer>.protected {
     justify-content: center;
 }
 
-
-@media (max-width: 400px) {
-    .card {
-        transition: 1s;
-        width: 100%;
-    }
-}
-
 @media (max-width: 1230px) {
     #reviewbtn {
         transition: 1s;
         top: 80px;
         left: 62%;
     }
-
 
     #loginbtn {
         transition: 1s;
@@ -529,57 +521,97 @@ footer>.protected {
     }
 }
 
-@media (max-width: 620px) {
-    #allhero {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 @media (max-width: 630px) {
     .card {
         width: calc(50% - 20px);
     }
-    
-    #herodiv {
-        width: calc(600px);
+
+    #coverb {
+        left: 0%;
+        width: 500px;
+    }
+
+    #herodiv>img {
+        position: absolute;
+        left: 0%;
     }
 
     #logo {
         position: absolute;
         top: 20px;
-        left: 50%;
+        left: 100px;
         transform: translateX(-50%)
     }
 
     #search {
         position: absolute;
         top: 80px;
-        width: 300px;
+        width: 320px;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    #loginbtn {
+    #dd {
         position: absolute;
+        left: 50%;
         top: 150px;
-        left: 23%;
     }
 
-    #signupbtn {
+    #dd2 {
         position: absolute;
+        left: 15%;
         top: 150px;
-        left: 77%;
     }
-    #dd2{
+
+    #dd3 {
         position: absolute;
-        left: 10%;
-        top: 210px;
-    }
-    #dd{
-        position: absolute;
-        left: 77%;
+        left: 50%;
         top: 210px;
     }
 
+    #dd4 {
+        position: absolute;
+        left: 15%;
+        top: 210px;
+    }
+
+    #reviewbtn {
+        position: absolute;
+        left: 16%;
+        width: max-content;
+        top: 270px;
+    }
+
+    #heroopt1,
+    #heroopt2,
+    #heroopt3,
+    #heroopt4 {
+        left: 15%;
+    }
+
+    :root {
+        --topm: 330px;
+    }
+    #herohd{
+        left: 100px;
+        top: 320px;
+    }
+    #soupbtn{
+        left: 100px;
+        top: 490px;
+    }
+    #mt{
+        left: 15%;
+        top: 750px;
+    }
+    #loginbtn{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+    }
+    #signupbtn{
+        position: absolute;
+        top: 20px;
+        left: 70%;
+    }
 }

@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 #wholehead{
     background-color: white;
 }
@@ -215,8 +211,10 @@ body {
     position: absolute;
     font-size: 70px;
     color: white;
-    top: 500px;
-    left: 20%;
+    top: 450px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
     text-align: center;
     }
 
@@ -349,25 +347,6 @@ footer>.protected {
     justify-content: center;
 }
 
-@media (max-width: 628px) {
-    #herodiv {
-        width: calc(600px);
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 400px) {
-    .card {
-        transition: 1s;
-        width: 100%;
-    }
-}
-
 @media (max-width: 1230px) {
     #reviewbtn {
         transition: 1s;
@@ -474,15 +453,111 @@ footer>.protected {
         left: 165px;
     }
 
-    #search {
-        transition: 1s;
-    }
-
-    #heroimg {
-        min-height: 100%;
-    }
-
     #headcontain {
         min-height: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    #coverb {
+        left: 0%;
+        width: 500px;
+    }
+
+    #herodiv>img {
+        position: absolute;
+        left: 0%;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        transform: translateX(-50%)
+    }
+
+    #search {
+        position: absolute;
+        top: 80px;
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #dd {
+        position: absolute;
+        left: 50%;
+        top: 150px;
+    }
+
+    #dd2 {
+        position: absolute;
+        left: 15%;
+        top: 150px;
+    }
+
+    #dd3 {
+        position: absolute;
+        left: 50%;
+        top: 210px;
+    }
+
+    #dd4 {
+        position: absolute;
+        left: 15%;
+        top: 210px;
+    }
+
+    #reviewbtn {
+        position: absolute;
+        left: 16%;
+        width: max-content;
+        top: 270px;
+        z-index: 5;
+    }
+
+    #heroopt1,
+    #heroopt2,
+    #heroopt3,
+    #heroopt4 {
+        left: 15%;
+    }
+
+    :root {
+        --topm: 330px;
+    }
+    #herohd{
+        width: 70vw;
+        font-size: 50px;
+        text-align: start;
+        top: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #soupbtn{
+        left: 100px;
+        top: 490px;
+    }
+    #mt{
+        left: 15%;
+        top: 750px;
+    }
+    #loginbtn{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+    }
+    #signupbtn{
+        position: absolute;
+        top: 20px;
+        left: 70%;
+    }
+    #herodiv>div{
+        position: absolute;
+        top: -10%;
     }
 }
